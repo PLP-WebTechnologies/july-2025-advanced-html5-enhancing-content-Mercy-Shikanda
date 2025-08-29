@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My HTML5 Showcase</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Lists -->
+    <section>
+      <h2>📋 My Favorite Hobbies</h2>
+      <ul>
+        <li>Reading books</li>
+        <li>Playing football</li>
+        <li>Photography</li>
+        <li>Cooking</li>
+      </ul>
+
+      <h3>Steps for Preparing Tea (Ordered List)</h3>
+      <ol>
+        <li>Boil water</li>
+        <li>Add tea leaves</li>
+        <li>Pour into a cup</li>
+        <li>Add sugar and milk</li>
+        <li>Stir well and serve</li>
+      </ol>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>📊 Weekly Study Timetable</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Mathematics</td>
+            <td>9:00 - 11:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Science</td>
+            <td>10:00 - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>History</td>
+            <td>2:00 - 4:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>🎵 Media Showcase</h2>
+      <p>Here is an image, some music, and a short video:</p>
+
+      <figure>
+        <img src="https://images.pexels.com/photos/33537789/pexels-photo-33537789.jpeg" alt="Sample image" width="200" height="150">
+        <figcaption>A placeholder image for demonstration.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="https://firebasestorage.googleapis.com/v0/b/virtualshoetryon.appspot.com/o/All%20To%20Him%20-%20HIllsong%20Worship(MP3_128K).mp3?alt=media&token=144becfd-ee8e-44be-b17c-0f365cb73eab" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video width="320" height="240" controls>
+        <source src="https://firebasestorage.googleapis.com/v0/b/virtualshoetryon.appspot.com/o/CityAlight%20-%20The%20God%20We%20Love%20(Nicene%20Creed)%20feat.%20Matt%20Redman.mp4?alt=media&token=cf9eda17-edfd-456c-95c1-3fb188488a8c" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section 4: Form -->
+    <section>
+      <h2>📝 Registration Form</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required minlength="3"><br><br>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="on"><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="0712345678" pattern="[0-9]{10}" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="5"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>
+            <input type="checkbox" name="newsletter" checked>
+            Subscribe to Newsletter
+          </label><br><br>
+
+          <label>Preferred Contact Method:</label><br>
+          <label><input type="radio" name="contact" value="email" required>Email</label>
+          <label><input type="radio" name="contact" value="phone">Phone</label>
+          <label><input type="radio" name="contact" value="sms">SMS</label><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment Demo</p>
+  </footer>
+
+</body>
+</html>
